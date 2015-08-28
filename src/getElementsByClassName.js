@@ -17,25 +17,18 @@ var getElementsByClassName = function(className) {
   		result.push(element);
   	}
   	if (element.childNodes.length === 0) {
-  		//return {element: []}
   		return;
   	}
-  	//var arr = [];
   	for (var child in element.childNodes) {
-  		//arr.push(recurse(element.childNodes[child]));
   		recurse(element.childNodes[child]);
   	}
-  	//return {element: arr};
   	return;
   }
 
-  //var tree = recurse(document.body);
   recurse(document.body);
 
   return result;
 
 };
-
-
 
 
