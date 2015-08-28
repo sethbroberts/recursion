@@ -8,6 +8,8 @@ var getElementsByClassName = function(className) {
   // your code here
   // use document.body, element.childNodes, and element.classList
 
+  // VERSION WITH LOTS OF COMMENTS, OPTION TO STORE DOM TREE
+
   /*
 	Strategy: Recurse the DOM tree. Every time you find targetClassName
 	on an element, stash that element in a global array called 'result'.
